@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RainGauge_PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/RainGauge_PCB-rescue.lib)(options "")(descr ""))
+)
