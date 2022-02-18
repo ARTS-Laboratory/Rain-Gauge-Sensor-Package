@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Battery_Leads
+#
+DEF Battery_Leads U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "Battery_Leads" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 150 -100 -150 150 0 1 0 N
+X PWR 1 -50 -200 100 U 50 50 1 1 I
+X GND 2 50 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Electrode_TH
+#
+DEF Electrode_TH U 0 40 Y Y 1 F N
+F0 "U" 100 0 50 H V C CNN
+F1 "Electrode_TH" -300 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 50 0 1 0 N
+X Electrode 1 0 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# SD_Card
+#
+DEF SD_Card U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "SD_Card" 0 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 350 0 -350 250 0 1 0 N
+X GND 1 -250 -100 100 U 50 50 1 1 I
+X MISO 2 -150 -100 100 U 50 50 1 1 I
+X CLK 3 -50 -100 100 U 50 50 1 1 I
+X MOSI 4 50 -100 100 U 50 50 1 1 I
+X CS 5 150 -100 100 U 50 50 1 1 I
+X 3.3V 6 250 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
