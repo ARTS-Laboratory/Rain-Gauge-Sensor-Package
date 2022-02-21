@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name New_schematic-rescue)(type Legacy)(uri ${KIPRJMOD}/New_schematic-rescue.lib)(options "")(descr ""))
+)
