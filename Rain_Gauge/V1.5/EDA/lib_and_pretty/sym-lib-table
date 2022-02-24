@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name RainGauge_PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/RainGauge_PCB-rescue.lib)(options "")(descr ""))
+  (lib (name RainGauge_PCB-cache)(type Legacy)(uri ${KIPRJMOD}/RainGauge_PCB-cache.lib)(options "")(descr ""))
+  (lib (name Schematics)(type Legacy)(uri ${KIPRJMOD}/Schematics.lib)(options "")(descr ""))
+  (lib (name ARTS-Lab)(type Legacy)(uri ${KIPRJMOD}/lib_and_pretty/ARTS-Lab.lib)(options "")(descr ""))
+)

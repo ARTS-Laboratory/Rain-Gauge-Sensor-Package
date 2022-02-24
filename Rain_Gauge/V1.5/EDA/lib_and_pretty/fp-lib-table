@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ARTS-Lab)(type KiCad)(uri ${KIPRJMOD}/lib_and_pretty/ARTS-Lab.pretty)(options "")(descr ""))
+  (lib (name EDA)(type KiCad)(uri "C:/Users/Ryan Brown/Documents/GitHub/Rain_Gauge/V1.5/EDA")(options "")(descr ""))
+  (lib (name MicroSDCardFootprint)(type KiCad)(uri "C:/Users/Ryan Brown/Documents/Research/rainGaugePCB1/MicroSDCardFootprint.pretty")(options "")(descr ""))
+)
