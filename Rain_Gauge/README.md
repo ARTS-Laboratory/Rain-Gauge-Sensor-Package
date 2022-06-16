@@ -9,9 +9,9 @@
 
 ## V1.4 Ava's drop conductivity gauge
 
-## V1.5 Ryan's drop conductivity gauge
+## V1.5 Ryan Brown's drop conductivity gauge
 
-## V1.6 Chris' stuff
+## V1.6 Chris' drop conductivity gauge
 
 
 
