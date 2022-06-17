@@ -11,7 +11,7 @@
 
 ## V1.5 Ryan Brown's drop conductivity gauge
 
-## V1.6 Chris' drop conductivity gauge
+## V1.6 Chri's drop conductivity gauge
 
 
 
