@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Rain Gauge")(type "KiCad")(uri "${KIPRJMOD}/Rain Gauge-backups/Rain Gauge.pretty")(options "")(descr ""))
+  (lib (name "ARTS-Lab")(type "KiCad")(uri "C:/Users/cheap/OneDrive/Documents/GitHub/Rain-Gauge-Sensor-Package/Rain_Gauge/V0.5/EDA/lib_and_pretty/ARTS-Lab.pretty")(options "")(descr ""))
+)
