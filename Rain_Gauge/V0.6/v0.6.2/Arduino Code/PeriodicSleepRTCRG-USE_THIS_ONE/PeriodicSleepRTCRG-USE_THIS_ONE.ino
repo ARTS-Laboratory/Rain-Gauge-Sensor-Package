@@ -8,6 +8,7 @@
 #define SEALEVELPRESSURE_HPA (1013.25)
 #define chipSelect 4
 
+//When activating the Arduino for testing, make sure you turn on the auxilary power before disconnecting from computer, makes sure the RTC keeps accurate time
 
 File myFile;
 
@@ -25,7 +26,7 @@ int sensor = digitalRead(3);
 
 void setup () {
   Serial.begin(115200); // Start serial port for monitoring
-
+  
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
@@ -81,7 +82,7 @@ void loop () {
 
 
       //
-      File myFile = SD.open("p1.csv", FILE_WRITE);
+      File myFile = SD.open("u6.csv", FILE_WRITE);
       if (myFile)  {    //Keeps Arduino awake and logs drop count data
         DateTime now = rtc.now();
         Serial.println();
@@ -100,24 +101,22 @@ void loop () {
         Serial.print(dropcount);
 
         
-       myFile.print(now.month(), DEC);
-       myFile.print(",");
-        myFile.print(now.day(), DEC);
-        myFile.print(",");
+       //myFile.print(now.month(), DEC);
+      // myFile.print("/");
+      //  myFile.print(now.day(), DEC);
         myFile.print(now.hour(), DEC);
-       myFile.print(",");
+       myFile.print(":");
         myFile.print(now.minute(), DEC);
-        myFile.print(",");
+        myFile.print(":");
         myFile.print(now.second(), DEC);
         myFile.print(",");
         myFile.print(bme.readHumidity());
-        myFile.print(",");
         myFile.print("%");
         myFile.print(",");
         myFile.print(dropcount);
         myFile.println();
         myFile.close();
-        delay(1000);
+        delay(500);           //interval on which the gauge counts raindrops, can be tweaked to create smoother data 
         dropcount = dropcount + 1;
 
 
@@ -130,7 +129,7 @@ void loop () {
 
     }
     else {
-      Serial.println("Ain't no rain in this bitch");
+      Serial.println("No rain connecting electrodes");
       delay(1000);
     }
 
